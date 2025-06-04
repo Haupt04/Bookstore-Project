@@ -4,6 +4,7 @@ import FeaturedSection from './FeaturedSection';
 import JoinSection from './JoinSection';
 import NewBookSection from './NewBookSection';
 import ServicesSection from './ServicesSection';
+import TestimonialSection from './TestimonialSection';
 
 const MainSection = () => {
   return (
@@ -14,6 +15,7 @@ const MainSection = () => {
         <DiscountSection />
         <NewBookSection />
         <JoinSection />
+        <TestimonialSection /> 
     </main>
   );
 };
