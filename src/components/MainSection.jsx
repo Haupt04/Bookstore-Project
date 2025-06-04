@@ -1,6 +1,7 @@
 import BookSection from './BookSection';
 import DiscountSection from './DiscountSection';
 import FeaturedSection from './FeaturedSection';
+import JoinSection from './JoinSection';
 import NewBookSection from './NewBookSection';
 import ServicesSection from './ServicesSection';
 
@@ -12,6 +13,7 @@ const MainSection = () => {
         <FeaturedSection /> 
         <DiscountSection />
         <NewBookSection />
+        <JoinSection />
     </main>
   );
 };
