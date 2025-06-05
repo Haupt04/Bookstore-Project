@@ -30,7 +30,7 @@ const Header = () => {
             <nav className="nav container">
                 <a href="#" className="nav__logo">
                     <RiBook2Line  />
-                    <span className="logo-text">Bookstore</span>
+                    <span className="logo-text"> The Bookstore</span>
                 </a>
 
                 <div className="nav__menu">
@@ -79,9 +79,6 @@ const Header = () => {
 
                     {/* Login Button */}
                     <RiUser3Line className="login-button" id="login-button" onClick={() => setShowLogin(true)}/>
-
-                    {/* Theme Button */}
-                    <RiMoonLine className="change-theme" id="theme-button" /> 
                 </div>
             </nav>
         </header>
