@@ -1,12 +1,32 @@
-# React + Vite
+## Bookstore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+![bookstore](https://github.com/user-attachments/assets/b78d91a9-0f24-41c3-aed0-4e6b8fe406de)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a Bookstore frontend design with React.
 
-## Expanding the ESLint configuration
+**Tech Stack**: React   
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+It is live on at [https://clone-spotify-6bux.onrender.com](https://responsivebookstore.netlify.app/)
+
+Note: The website will spin down with inactivity, which can delay requests by 50 seconds or more.
+
+## Installation & Setup
+
+1. Clone the repository:
+```bash
+  git clone https://github.com/your-username/your-repo-name.git
+  cd your-repo-name
+```
+
+2. Install dependencies:
+```bash
+  npm install
+```
+
+3. Start the development server:
+```bash
+  npm run dev
+```
+
