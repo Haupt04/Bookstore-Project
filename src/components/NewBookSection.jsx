@@ -1,6 +1,7 @@
 import { RiStarFill, RiStarHalfFill } from "@remixicon/react";
-import bookCover10 from "../assets/Book Covers/10.png";
-import bookCover12 from "../assets/Book Covers/3.png";
+import bookCover10 from '../assets/images/10.png'
+import bookCover12 from '../assets/images/3.png'
+import { Link } from "react-router-dom";
 
 const NewBookSection = () => {
   return (
@@ -12,7 +13,7 @@ const NewBookSection = () => {
         <div className='new__container container'>
             <div className='new__swiper'>
                 <div className="item">
-                    <a href="#" className='new__card'>
+                    <Link to="/book/10" className='new__card'>
                         <img src={bookCover10} alt="image" className="new__img" />
                         <div>
                         <h2 className="new__title">The Story of Two Lovers</h2>
@@ -30,11 +31,11 @@ const NewBookSection = () => {
                             
                         </div>
                         </div> 
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="item">
-                    <a href="#" className='new__card'>
+                    <Link to="/book/3" className='new__card'>
                         <img src={bookCover12} alt="image" className="new__img" />
                         <div>
                         <h2 className="new__title">The Cupid</h2>
@@ -52,7 +53,7 @@ const NewBookSection = () => {
                             
                         </div>
                         </div> 
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

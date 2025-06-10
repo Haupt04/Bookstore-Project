@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Whispers of the Dusk",
+    "author": "Aria Blackthorn",
+    "cover": "/images/1.png",
+    "price": 289.00,
+    "description": "In a world where shadows carry secrets, a lone historian unearths a forgotten prophecy that could bring ruin—or redemption—to the realm. As dusk descends, whispers from the past grow louder, beckoning her toward a truth long buried."
+  },
+  {
+    "id": 2,
+    "title": "Beneath Crimson Moons",
+    "author": "Lucian Wren",
+    "cover": "/images/2.png",
+    "price": 310.00,
+    "description": "Two moons bleed crimson over a land on the edge of war. When a rogue knight and a cursed seer cross paths, their fates intertwine in a rebellion against an empire built on lies and blood magic."
+  },
+  {
+    "id": 3,
+    "title": "The Last Ember King",
+    "author": "Seraphina Vale",
+    "cover": "/images/3.png",
+    "price": 259.00,
+    "description": "The final heir to a long-extinct line of fire-wielders must reclaim his throne to stop an eternal winter. But first, he must survive the betrayal of those closest to him—and the rising dark within himself."
+  },
+  {
+    "id": 4,
+    "title": "Echoes in the Fog",
+    "author": "Dorian Ash",
+    "cover": "/images/4.png",
+    "price": 278.00,
+    "description": "When a coastal town is enveloped in an unending fog, haunting memories begin to resurface. A grieving detective must face his past and follow the echoes into a mystery that defies time and death."
+  },
+  {
+    "id": 5,
+    "title": "Garden of Hollow Stars",
+    "author": "Lyra Stone",
+    "cover": "/images/5.png",
+    "price": 330.00,
+    "description": "In a floating garden above a dying world, a botanist discovers celestial flora with the power to grant memories. But as the stars flicker out, she must decide which memories are worth saving—and which are best left forgotten."
+  },
+  {
+    "id": 6,
+    "title": "The Clockmaker’s Heir",
+    "author": "Thorne Everhart",
+    "cover": "/images/6.png",
+    "price": 305.00,
+    "description": "A young apprentice discovers he is the heir to an ancient guild of timekeepers. With time unraveling around him, he must master the gears of fate to prevent a war that could erase history itself."
+  },
+  {
+    "id": 7,
+    "title": "Shadowveil",
+    "author": "Isolde Myrr",
+    "cover": "/images/7.png",
+    "price": 297.00,
+    "description": "Beneath the capital’s glamour lies Shadowveil, a hidden district where nightmares come to life. A runaway noble must brave its darkness to uncover the truth about her cursed bloodline and reclaim her stolen legacy."
+  },
+  {
+    "id": 8,
+    "title": "Voices Beyond the Vale",
+    "author": "Elias Vex",
+    "cover": "/images/8.png",
+    "price": 312.00,
+    "description": "After a near-death experience, a reclusive scholar begins to hear voices from the dead. As he investigates the veil between life and death, he uncovers a conspiracy that could silence the afterlife forever."
+  },
+  {
+    "id": 9,
+    "title": "The Dream Eater’s Pact",
+    "author": "Nyra Solace",
+    "cover": "/images/9.png",
+    "price": 265.00,
+    "description": "A girl born with the ability to devour nightmares is bound to a dream demon. Together, they forge a pact to defeat a cult that feeds on the dreams of innocents—but at a cost neither is prepared to pay."
+  },
+  {
+    "id": 10,
+    "title": "A Season of Ashes",
+    "author": "Malachai Ember",
+    "cover": "/images/10.png",
+    "price": 280.00,
+    "description": "In a kingdom where every autumn brings death, a young alchemist seeks the truth behind the curse. With the leaves turning and ash falling once more, she races against time to find the source—or perish like the rest."
+  },
+  {
+    "id": 11,
+    "title": "Crows of the Sapphire Gate",
+    "author": "Vesper Dawn",
+    "cover": "/images/11.png",
+    "price": 322.00,
+    "description": "When a sacred gate is breached, harbingers in the form of crows descend upon the realm. A disgraced priestess and a hunted assassin must unite to restore the seal before the underworld consumes everything."
+  },
+  {
+    "id": 12,
+    "title": "Lanterns of the Forgotten",
+    "author": "Caelum Rhodes",
+    "cover": "/images/12.png",
+    "price": 275.00,
+    "description": "Each year, souls forgotten by history light a lantern in the forest. When a young boy’s lantern is missing, he journeys into the woods to uncover the truth—and discovers a realm where memories are currency."
+  },
+  {
+    "id": 13,
+    "title": "The Hollow Crown",
+    "author": "Elira Fane",
+    "cover": "/images/13.png",
+    "price": 349.00,
+    "description": "A tyrant wears a crown forged from lies. A rebel queen rises with a claim to the throne and a weapon from the old gods. In a realm torn by war, one will wear the hollow crown—and one will burn."
+  },
+  {
+    "id": 14,
+    "title": "Fable of the Iron Sea",
+    "author": "June Haupt",
+    "cover": "/images/14.png",
+    "price": 299.00,
+    "description": "On a sea where ships are built from bones and storms whisper names, a pirate captain seeks the lost fable said to unlock immortality. But in the Iron Sea, legends have teeth—and they bite back."
+  }
+]

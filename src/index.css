@@ -277,6 +277,12 @@ img {
   top:0;
 }
 
+.search-results {
+  position: relative;
+  z-index: 10000; /* Higher than the overlay */
+  background: white; /* Optional: to ensure it's not transparent */
+  padding: 1rem;
+}
 
 /*  Login Section */
 
@@ -516,7 +522,7 @@ img {
 }
 
 .featured__price{
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
 }
 
 .featured__card .button {
@@ -1076,4 +1082,235 @@ img {
   .home__article,.home__img{
     width: 290px;
   }
+
+  .discount__description{
+    text-align: justify;
+  }
+
+  .home__data .button {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+  }
+}
+
+
+/* All Books Component */
+.allbook {
+  display: block; 
+  width: 100%;        
+  min-height: 200px;  
+  background-color: var(--container-color); 
+  color: var(--text-color);
+  margin-top: var(--header-height);
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.book-header{
+  justify-items: center;
+}
+
+.book-card{
+  padding: 1rem;
+}
+
+
+/* Single Book Section */
+
+
+.single-container{
+  max-width: 1220px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  padding-top: var(--header-height);
+}
+
+.book-image {
+  width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-single {
+  flex: 2 1 600px;
+}
+
+.right-single h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.right-single p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.text-single{
+  text-align: justify;
+}
+
+.book-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #41c718;
+}
+
+/* Cart Button - Numbers */
+.cart-badge {
+  position: absolute;
+  color: var(--first-color);
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 20px;
+  margin-right: 5px;
+}
+
+
+/* Cart Page */
+.cart-container {
+  margin-top: 6rem !important;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+ 
+}
+
+.cart-container h1 {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  color: var(--first-color)
+}
+
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-container li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+ 
+}
+
+.cart-cover {
+  width: 180px;
+  height: 280px;
+  border-radius: 5%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-container li button {
+  margin-left: auto;
+  background-color: #ff4d4f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+ .cart-buying{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+ }
+.cart-container li button:hover {
+  background-color: red;
+}
+
+.cart-container p {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.cart-container strong {
+  font-weight: 600;
+}
+
+.clear-cart {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.clear-cart:hover {
+  background-color: red;
+}
+
+.payment-cart {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-left: 1rem;
+}
+
+.payment-cart:hover {
+  background-color: rgb(44, 179, 44);
+}
+.empty  {  
+  font-size: 2rem  !important;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  .cart-container li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-container li img {
+    margin-bottom: 0.5rem;
+  }
+
+  .cart-container li button {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  } 
 }

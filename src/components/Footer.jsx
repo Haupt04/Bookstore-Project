@@ -1,4 +1,4 @@
-import { RiBook3Line } from '@remixicon/react'
+import { RiBook2Line } from '@remixicon/react'
 
 
 const Footer = () => {
@@ -7,7 +7,8 @@ const Footer = () => {
         <div className='footer__container container grid'>
             <div>
                 <a href='#' className='footer__logo'>
-                    <RiBook3Line /> The Bookstore
+                    <RiBook2Line  />
+                    <span className="logo-text"> The Bookstore</span>
                 </a>
 
                 <p className='footer__description'>

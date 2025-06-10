@@ -1,5 +1,6 @@
-import bookCover13 from "../assets/Book Covers/2.png";
-import bookCover14 from "../assets/Book Covers/1.png";
+import bookCover13 from "../assets/images/2.png";
+import bookCover14 from "../assets/images/1.png";
+import { Link } from "react-router-dom";
 
 const DiscountSection = () => {
   return (
@@ -14,7 +15,7 @@ const DiscountSection = () => {
                     Discover your next favorite book at an unbeatable price. For a limited time, enjoy up to 30% off selected titles across all genres. Whether you're into thrilling mysteries, heartwarming romances, or inspiring non-fiction, there's something for everyone. Don't miss out—grab your discounted books today and start your next reading adventure!
                 </p>
 
-                <a href="#" className="button">Shop Now</a>
+                <Link to={"/all-products"} className="button">Shop Now</Link>
             </div>
 
             <div className="discount__images">

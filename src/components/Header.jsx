@@ -1,7 +1,9 @@
-import { RiBook2Line, RiHome2Line, RiBook3Line, RiBookmark2Line, RiMessage2Line, RiSearch2Line, RiUser3Line, RiMoonLine, RiPriceTag3Line } from "@remixicon/react"
+import { RiBook2Line, RiHome2Line, RiBook3Line, RiBookmark2Line, RiMessage2Line, RiSearch2Line, RiUser3Line, RiMoonLine, RiPriceTag3Line, RiShoppingCartLine } from "@remixicon/react"
 import { useEffect, useState } from "react";
 import Search from "./Search";
 import Login from "./Login";
+import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 
 
@@ -9,6 +11,8 @@ const Header = () => {
     const [shadow, setShadow] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
+    const { cartItems } = useCart();
+    const itemCount = cartItems.length;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,47 +32,47 @@ const Header = () => {
     <>
         <header className={`header ${shadow ? 'shadow-header' : ''}`} id="header">
             <nav className="nav container">
-                <a href="#" className="nav__logo">
+                <Link to="/" className="nav__logo">
                     <RiBook2Line  />
                     <span className="logo-text"> The Bookstore</span>
-                </a>
+                </Link>
 
                 <div className="nav__menu">
                     <ul className="nav__list">
                         {/* First item in menu */}
                         <li className="nav__item">
-                            <a href="#home" className="nav__link">
+                            <Link to="/#home" className="nav__link">
                                 <RiHome2Line /> 
                                 <span>Home</span>
-                            </a>
+                            </Link>
                         </li>
                         {/* Second item in menu */}
                         <li className="nav__item">
-                            <a href="#featured" className="nav__link">
+                            <Link to="/#featured" className="nav__link">
                                 <RiBook3Line />
                                 <span>Featured</span>
-                            </a>
+                            </Link>
                         </li>
                         {/* Three item in menu */}
                         <li className="nav__item">
-                            <a href="#discount" className="nav__link">
+                            <Link to="/#discount" className="nav__link">
                                 <RiPriceTag3Line /> 
                                 <span>Discount</span>
-                            </a>
+                            </Link>
                         </li>
                         {/* Four item in menu */}
                         <li className="nav__item">
-                            <a href="#new" className="nav__link">
+                            <Link to="/#new" className="nav__link">
                                 <RiBookmark2Line  /> 
                                 <span>New Books</span>
-                            </a>
+                            </Link>
                         </li>
                         {/* Firth item in menu */}
                         <li className="nav__item">
-                            <a href="#testimonial" className="nav__link">
+                            <Link to="/#testimonial" className="nav__link">
                                 <RiMessage2Line /> 
                                 <span>Testimonial</span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -79,6 +83,13 @@ const Header = () => {
 
                     {/* Login Button */}
                     <RiUser3Line className="login-button" id="login-button" onClick={() => setShowLogin(true)}/>
+
+                    {/* Cart Button */}
+                    <Link to={'/cart'}>
+                        <RiShoppingCartLine className="login-button" id="cart-button"/>
+                        {itemCount > 0 && <span className="cart-badge">{itemCount}</span>}
+                    </Link>
+                    
                 </div>
             </nav>
         </header>

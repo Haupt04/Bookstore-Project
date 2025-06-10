@@ -1,17 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-
-import bookCover1 from '../assets/Book Covers/1.png';
-import bookCover2 from '../assets/Book Covers/2.png';
-import bookCover3 from '../assets/Book Covers/3.png';
-import bookCover4 from '../assets/Book Covers/4.png';
-import bookCover5 from '../assets/Book Covers/5.png';
-import bookCover6 from '../assets/Book Covers/6.png';
+import { Link } from 'react-router-dom';
+import books from '../data/bookdata.json'
 
 
 
 const BookSection = () => {
+
   return (
     <section className="home section" id="home">
         <div className="home__container container grid">
@@ -20,7 +16,9 @@ const BookSection = () => {
             <p className="home__description">
               Find the best books from your favorite writers, explore hundreds of books with all possible categories
             </p>
-            <a href="#" className="button">Explore Now</a>
+            <Link to={"/all-products"} className='button'>
+              Explore Now
+            </Link>
           </div>
         </div>
 
@@ -39,9 +37,9 @@ const BookSection = () => {
               }}
               grabCursor={true}
             >
-              {[bookCover1, bookCover2, bookCover3, bookCover4, bookCover5, bookCover6].map((cover, index) => (
-                <SwiperSlide key={index} className="home__article">
-                  <img src={cover} alt={`Book Cover ${index + 1}`} className="home__img" />
+              {books.map(book => (
+                <SwiperSlide key={book.id} className="home__article">
+                  <img src={book.cover} alt={book.title} className="home__img" />
                 </SwiperSlide>
               ))}
             </Swiper>
